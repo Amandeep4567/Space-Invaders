@@ -5,13 +5,15 @@
 }
 
 body {
-  background-color: #080b2e;
+  background-color: #050613;
 }
 
 .grid {
   width: 500px;
   height: 500px;
-  border: solid black 1px;
+  border: solid rgb(22, 13, 47) 2px;
+  background-color: #000000db;
+  box-shadow: 0px 0px 80px 50px rgba(13, 8, 73, 0.428);
   display: flex;
   flex-wrap: wrap;
   position: absolute;
@@ -28,18 +30,18 @@ body {
 .invader {
   background-color: #c588c5;
   clip-path: polygon(
-    50% 0,
-    100% 10%,
-    75% 34%,
-    100% 45%,
-    72% 85%,
-    50% 100%,
-    28% 85%,
-    0 45%,
-    25% 34%,
-    0 10%
+    50% 30%,
+    85% 16%,
+    100% 50%,
+    80% 100%,
+    76% 80%,
+    50% 70%,
+    24% 80%,
+    20% 100%,
+    0 50%,
+    16% 14%
   );
-
+  filter: grayscale(100%);
   border-radius: 10px;
 }
 
