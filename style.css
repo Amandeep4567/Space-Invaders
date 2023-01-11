@@ -1,27 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #080b2e;
+}
+
 .grid {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   border: solid black 1px;
   display: flex;
   flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .grid div {
-  width: 20px;
-  height: 20px;
+  width: 33px;
+  height: 33px;
 }
 
 .invader {
-  background-color: purple;
+  background-color: #c588c5;
+  clip-path: polygon(
+    50% 0,
+    100% 10%,
+    75% 34%,
+    100% 45%,
+    72% 85%,
+    50% 100%,
+    28% 85%,
+    0 45%,
+    25% 34%,
+    0 10%
+  );
+
   border-radius: 10px;
 }
 
 .shooter {
-  background-color: green;
+  background-color: #85feff;
+  clip-path: polygon(
+    50% 0,
+    64% 41%,
+    92% 47%,
+    100% 70%,
+    68% 100%,
+    50% 72%,
+    30% 100%,
+    0 70%,
+    8% 45%,
+    34% 41%
+  );
+  filter: drop-shadow(10px 4px 8px 10px #7db5e5, 10px 6px 20px 10px #7db5e5);
 }
 
 .laser {
   background-color: orange;
+  clip-path: polygon(50% 0, 100% 50%, 60% 33%, 47% 99%, 40% 33%, 0 50%);
 }
 
 .boom {
