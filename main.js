@@ -77,8 +77,15 @@ function moveInvaders() {
     }
   }
 
+  // if (alienInvaders.length / 2) {
+  //   invadersId = setInterval(moveInvaders, 200);
+  // }
+
   for (let i = 0; i < alienInvaders.length; i++) {
     alienInvaders[i] += direction;
+    // if (alienInvaders.length === alienInvaders.length / 2) {
+    //   setInterval(moveInvaders, 200);
+    // }
   }
   draw();
 
@@ -101,7 +108,7 @@ function moveInvaders() {
   }
 }
 
-invadersId = setInterval(moveInvaders, 300);
+invadersId = setInterval(moveInvaders, 400);
 
 function shoot(e) {
   let laserId;
@@ -131,8 +138,14 @@ function shoot(e) {
   }
   switch (e.key) {
     case "ArrowUp":
-      laserId = setInterval(moveLaser, 100);
+      laserId = setInterval(moveLaser, 50);
   }
 }
 
 document.addEventListener("keydown", shoot);
+
+document.addEventListener("keyup", function (e) {
+  if (e.key == " " || e.code == "Space" || e.keyCode == 32) {
+    window.location.reload();
+  }
+});

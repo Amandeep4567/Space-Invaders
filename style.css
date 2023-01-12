@@ -27,6 +27,12 @@ body {
   height: 33px;
 }
 
+h1 {
+  color: #fff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 .invader {
   background-color: #c588c5;
   clip-path: polygon(
