@@ -103,7 +103,7 @@ function moveInvaders() {
   }
 }
 
-invadersId = setInterval(moveInvaders, 400);
+invadersId = setInterval(moveInvaders, 460);
 
 function shoot(e) {
   let laserId;
@@ -131,7 +131,7 @@ function shoot(e) {
       console.log(aliensRemoved);
 
       if (results === 15) {
-        invadersId = setInterval(moveInvaders, 300);
+        invadersId = setInterval(moveInvaders, 350);
       }
     }
   }
